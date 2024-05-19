@@ -1,2 +1,2 @@
 # leetcode
-Leetcode testing
+Leetcode exercises
