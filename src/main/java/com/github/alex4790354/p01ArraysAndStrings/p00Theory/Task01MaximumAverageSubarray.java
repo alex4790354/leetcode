@@ -1,4 +1,4 @@
-package com.github.alex4790354.p01ArraysAndStrings.p00;
+package com.github.alex4790354.p01ArraysAndStrings.p00Theory;
 
 
 /**  You are given an integer array nums consisting of n elements, and an integer k.
