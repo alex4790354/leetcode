@@ -9,17 +9,17 @@ public class Task02Pangram {
         System.out.println(isPangram(word));
     }
 
-    private static boolean isPangram(String word) {
-        String allChars = "abcdefghijklmnopqrstuvwxyz";
-        Set<Character> alphabet = new HashSet<>();
-        for (Character c : allChars.toCharArray()) {
-            alphabet.add(c);
+    private static boolean isPangram(String sentence) {
+        String alphabetChars = "abcdefghijklmnopqrstuvwxyz";
+        Set<Character> alphabetSet = new HashSet<>();
+        for (Character c : alphabetChars.toCharArray()) {
+            alphabetSet.add(c);
         }
 
-        for (Character c : word.toCharArray()) {
-            alphabet.remove(c);
+        for (int i = 0; i < sentence.length(); i++) {
+            alphabetSet.remove(sentence.charAt(i));
         }
-        return alphabet.isEmpty();
+        return alphabetSet.isEmpty();
     }
 
 }
