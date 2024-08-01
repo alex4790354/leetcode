@@ -6,7 +6,6 @@ package com.github.alex4790354.p03LinkedLists.p00Theory;
  *  Input: head = [1,2,3,4,5,6], left = 2, right = 5
  *  Output: [1,5,4,3,2,5]
 
- *  TODO: repeat it
  */
 public class T03ReverseLinkedListII {
 
