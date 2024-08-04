@@ -1,9 +1,6 @@
 package com.github.alex4790354.p07Greedy.p00Theory;
 
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.PriorityQueue;
 
 /** You have some apples and a basket that can carry up to 5000 units of weight.
  *  Given an integer array weight where weight[i] is the weight of the ith apple, return the maximum number of apples you can put in the basket.

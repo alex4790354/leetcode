@@ -49,11 +49,13 @@ public class Task02LongestSubsequenceWithLimitedSum {
             mid = left + (right - left) / 2;
             if (numsSumm[mid] == target)
                 return mid + 1;
-            else if (mid + 1 < numsSumm.length &&
-                     numsSumm[mid] < target && numsSumm[mid + 1] > target)
-                return mid + 1;
             else if (numsSumm[mid] > target)
                 right = mid - 1;
+            else if (numsSumm[mid] < target &&
+                     mid + 1 < numsSumm.length &&
+                     numsSumm[mid + 1] > target
+                    )
+                return mid + 1;
             else
                 left = mid + 1;
         }
