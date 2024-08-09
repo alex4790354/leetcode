@@ -16,10 +16,10 @@ public class T02MinimumCostToConnectSticks {
 
     public static void main(String[] args) {
         int[] sticks = {2,4,3};
-        System.out.println(new T02MinimumCostToConnectSticks().solutin(sticks));
+        System.out.println(new T02MinimumCostToConnectSticks().solution(sticks));
     }
 
-    private int solutin(int[] sticks) {
+    private int solution(int[] sticks) {
         int stick1, stick2, result = 0;
         PriorityQueue<Integer> pq = new PriorityQueue<>();
         for(int stick : sticks) {
