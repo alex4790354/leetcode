@@ -3,6 +3,11 @@ package com.github.alex4790354.mystack;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
+
+//  3) так что бы наш NativeStack стал ограниченным блокирующим стеком (в конструкторе добавляем размер),
+//     push в предельном размере должен заблокироваться и ждать пока освободится место.
+//     peeck может возвращать null (если уже пусто).
+
 public class BlockingStackWithLock<T> {
 
     private StackNode<T> top;

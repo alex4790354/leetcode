@@ -2,6 +2,9 @@ package com.github.alex4790354.mystack;
 
 import java.util.concurrent.atomic.AtomicReference;
 
+
+// 4) не огранченный, потоко-безпасный, не блокирующий стек.
+
 public class LockFreeStack<T> {
     private final AtomicReference<Node<T>> top = new AtomicReference<>();
 

@@ -14,7 +14,7 @@ package com.github.alex4790354.mystack;
 
  4) не огранченный, потоко-безпасный, не блокирующий стек.
 
- sergey.nazaryev@raiffeisen.ru
+
  Тесты: <a href="https://lp.jetbrains.com/research/concurrent-computing-lab/projects/lincheck/">...</a>
  */
 
